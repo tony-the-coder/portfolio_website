@@ -1,5 +1,4 @@
 .container {
-  max-width: 1280px;
   padding: 0 1.5rem;
   margin: auto;
   overflow: hidden; }
@@ -292,7 +291,7 @@ img {
 
 #about-a .about-info {
   display: grid;
-  grid-template-areas: 'bioimage bio bio' 'aw1 aw2 aw3';
+  grid-template-areas: 'bioimage bio bio bio' 'aw1 aw2 aw3 aw4';
   grid-gap: 1.2rem; }
 
 #about-a .bio-image {
@@ -312,11 +311,15 @@ img {
 #about-a .award-3 {
   grid-area: aw3; }
 
+#about-a .award-4 {
+  grid-area: aw4; }
+
 #about-a .award-1 .fas,
 #about-a .award-2 .fas,
-#about-a .award-3 .fas {
+#about-a .award-3 .fas,
+#about-a .award-4 .fas {
   color: #ffbc00;
-  margin: 1rem; }
+  margin: 2rem; }
 
 #about-b .progress {
   overflow: hidden;
@@ -353,14 +356,14 @@ img {
   #about-d .testimonials img {
     width: 50px;
     height: 50px;
-    border: 50%;
+    border-radius: 50%;
     margin-right: 0.5rem; }
 
 #contact-a .text-fields {
   display: grid;
   grid-template-areas: 'name email' 'subject phone' 'message message';
   grid-gap: 1.2rem;
-  margin-bottom: 1.2 rem; }
+  margin-bottom: 1.2rem; }
   #contact-a .text-fields .name-input {
     grid-area: name; }
   #contact-a .text-fields .subject-input {
@@ -408,69 +411,3 @@ img {
       padding: 0.5rem; }
       #main-footer .footer-content .social .fab:hover {
         background: #ffbc00; }
-
-@media (max-width: 800px) {
-  #header-home {
-    height: 30rem; }
-    #header-home .header-content {
-      padding-top: 5rem; } }
-
-@media (max-width: 500px) {
-  #main-nav {
-    flex-direction: column;
-    align-items: center; }
-    #main-nav li {
-      padding: 1rem; }
-  #header-home {
-    height: 10rem;
-    border-bottom: 3px solid #ffbc00;
-    background-position: 20% 30%; }
-    #header-home .header-content {
-      display: none; }
-  #header-inner {
-    height: 10rem; }
-  #home-a .specials,
-  #home-b .stats,
-  #home-c .process,
-  #about-d .testimonials,
-  #contact-b .contact-info,
-  .items {
-    grid-template-columns: 1fr; }
-  #about-a .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'aw1' 'aw2' 'aw3'; }
-  #about-c {
-    display: none; }
-  #home-a .specials div {
-    border-bottom: 1px #f4f4f4 solid;
-    padding-bottom: 1rem; }
-    #home-a .specials divlast-child {
-      border: none;
-      padding-bottom: 0; }
-  #home-b .stats div {
-    padding: 2rem 0 1rem 0; }
-  #contact-a .text-fields {
-    grid-template-areas: 'name' 'subject' 'email' 'phone' 'message'; }
-  #contact-b div {
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px #555 solid; }
-    #contact-b div:last-child {
-      border: none;
-      margin-bottom: 0;
-      padding-bottom: 0; }
-  #contact-c h1 {
-    font-size: 2rem; }
-  #main-footer {
-    height: 7rem; }
-    #main-footer .footer-content {
-      flex: column;
-      padding: 1rem;
-      height: 5rem; } }
-
-@media (max-height: 580px) {
-  #header-home .header-content {
-    padding-top: 3rem; } }
-
-@media (max-height: 330px) {
-  #header-home .header-content h1 {
-    font-size: 2rem; } }

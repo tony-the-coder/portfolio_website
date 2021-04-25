@@ -197,8 +197,9 @@ img {
         .about-info {
             display: grid;
             grid-template-areas: 
-            'bioimage bio bio'
-            'aw1 aw2 aw3';
+            'bioimage bio bio bio'
+            'aw1 aw2 aw3 aw4';
+            
             grid-gap: 1.2rem;
             
         }
@@ -219,11 +220,17 @@ img {
         .award-3 {
             grid-area: aw3;
         }
+        .award-4 {
+            grid-area: aw4;
+        }
+       
         .award-1 .fas,
         .award-2 .fas,
-        .award-3 .fas {
+        .award-3 .fas,
+        .award-4 .fas
+         {
             color: $main-color;
-            margin: 1rem;
+            margin: 2rem;
         }
     }
     &-b {
@@ -272,7 +279,7 @@ img {
             img {
                 width: 50px;
                 height: 50px;
-                border: 50%;
+                border-radius: 50%;
                 margin-right: 0.5rem;
             }
         }
@@ -290,7 +297,7 @@ img {
             'subject phone'
             'message message';
             grid-gap: 1.2rem;
-            margin-bottom:1.2 rem;
+            margin-bottom:1.2rem;
 
             .name-input {
                 grid-area: name;
@@ -361,4 +368,4 @@ img {
     }
 }
 
-@import 'media'
+// @import 'media'
