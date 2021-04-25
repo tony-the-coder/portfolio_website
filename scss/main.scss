@@ -197,8 +197,8 @@ img {
         .about-info {
             display: grid;
             grid-template-areas: 
-            'bioimage bio bio bio'
-            'aw1 aw2 aw3 aw4';
+            'bioimage bio bio bio bio'
+            'aw1 aw2 aw3 aw4 aw5';
             
             grid-gap: 1.2rem;
             
@@ -223,11 +223,15 @@ img {
         .award-4 {
             grid-area: aw4;
         }
+        .award-5 {
+            grid-area: aw5;
+        }
        
         .award-1 .fas,
         .award-2 .fas,
-        .award-3 .fas,
-        .award-4 .fas
+        .award-3 .fab,
+        .award-4 .fas,
+        .award-5 .fas
          {
             color: $main-color;
             margin: 2rem;
@@ -368,4 +372,4 @@ img {
     }
 }
 
-// @import 'media'
+@import 'media'

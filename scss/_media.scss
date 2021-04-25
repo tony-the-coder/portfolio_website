@@ -55,7 +55,8 @@
             'aw1'
             'aw2'
             'aw3'
-            'aw4';
+            'aw4'
+            'aw5';
         }
 
     }
@@ -95,8 +96,13 @@
                 'email'
                 'phone'
                 'message';
+                padding: 10px;
+                .message-input {
+                    
+                    height: 50px;
+                }
             }
-            
+        
         }
         &-b {
             div {
@@ -146,4 +152,5 @@
             }
         }
     }
+   
 }
